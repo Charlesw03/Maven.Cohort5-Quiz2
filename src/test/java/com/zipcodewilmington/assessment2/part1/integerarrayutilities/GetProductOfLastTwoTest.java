@@ -8,7 +8,7 @@ public class GetProductOfLastTwoTest {
     @Test
     public void test1() {
         Integer[] array = {1, 2, 4};
-        Integer expectedSum = 2;
+        Integer expectedSum = 8;
         test(array, expectedSum);
     }
 
@@ -22,7 +22,7 @@ public class GetProductOfLastTwoTest {
     @Test
     public void test3() {
         Integer[] array = {10, 20, 4};
-        Integer expectedSum = 200;
+        Integer expectedSum = 80;
         test(array, expectedSum);
     }
 
