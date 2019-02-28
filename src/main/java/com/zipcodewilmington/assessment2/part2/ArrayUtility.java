@@ -22,18 +22,16 @@ public class ArrayUtility {
     }
 
     public Integer[] rotate(Integer[] array, Integer index) {
-        if(index < 0){
-            index = -index %array.length;
-            index = array.length - index;
-
+       Integer[] answer = new Integer[array.length];
+        for (int i = 0; i <array.length ; i++) {
+            if(i - index < 0){
+                answer[array.length-index + i ]= array[i];
+               } else {
+                answer[i-index] = array[i];
+            }
         }
-         Integer[] result = new Integer[array.length];
-        for (int i = 0; i < array.length ; i++) {
-            result[(i+index)%array.length] = array[i];
-        }
+        return answer;
 
-
-        return result;
     }
 
     public Integer countOccurrence(Integer[] array1, Integer[] array2, Integer valueToEvaluate) {

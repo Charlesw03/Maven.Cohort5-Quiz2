@@ -15,9 +15,14 @@ public class IntegerArrayUtilities {
     }
 
     public Integer[] range(int start, int stop) {
-        Integer[] arr = {5,6,7,8,9,10};
+       Integer[] answer = new Integer[stop-start+1];
+       int index = 0;
+        for (int i = stop; i < start ; i--) {
+            answer[index] = i;
+            index++;
+        }
 
-        return arr;
+        return answer;
     }
 
     public Integer getSumOfFirstTwo(Integer[] array) {
