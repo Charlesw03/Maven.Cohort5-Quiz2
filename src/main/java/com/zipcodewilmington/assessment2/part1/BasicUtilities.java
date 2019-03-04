@@ -27,6 +27,13 @@ public class BasicUtilities {
     }
 
     public Boolean startsWith(String string, Character character) {
+
+       /* String lowerCaseString= string.tolowercase()l
+       String CharLowerCase = character.toString().tolowercase();;
+
+       */
+
+
         Boolean answer = false;
         String firstLetter = string.substring(0, 1);
         if (firstLetter.equalsIgnoreCase(character.toString())) {

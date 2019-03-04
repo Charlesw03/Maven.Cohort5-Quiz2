@@ -15,9 +15,11 @@ public class IntegerArrayUtilities {
     }
 
     public Integer[] range(int start, int stop) {
-       Integer[] answer = new Integer[stop-start+1];
+
+
+        Integer[] answer = new Integer[stop-start+1];
        int index = 0;
-        for (int i = stop; i < start ; i--) {
+        for (int i = start; i <= stop ; i++) {
             answer[index] = i;
             index++;
         }

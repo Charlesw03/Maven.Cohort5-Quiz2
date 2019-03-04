@@ -8,6 +8,6 @@ public class BlueJay extends Bird {
 
         @Override
         public String color() {
-                return null;
+                return "blue";
         }
 }
